@@ -6,8 +6,8 @@ pipeline {
         maven 'Maven'
     }
     environment {
-        DOCKER_REPO_SERVER = '330673547330.dkr.ecr.eu-central-1.amazonaws.com'
-        DOCKER_REPO = "${DOCKER_REPO_SERVER}/java-maven-app"
+        DOCKER_REPO_SERVER = 'docker.io'
+        DOCKER_REPO = "${DOCKER_REPO_SERVER}/davidprigodin/java-maven-app"
     }
     stages {
         stage('increment version') {
